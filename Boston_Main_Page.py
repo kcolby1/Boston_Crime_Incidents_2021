@@ -155,19 +155,20 @@ st.subheader(
 link2 = '[City of Boston Police Department](https://www.boston.gov/departments/police)'
 st.markdown(link2, unsafe_allow_html=True)
 
-st.subheader('Receive updates from the City of Boston PD by entering name and email below.')
+#contact form only worked locally and did not work when streamlit published
+#st.subheader('Receive updates from the City of Boston PD by entering name and email below.')
 
-contact_form= """
-<form action="https:formsubmit.co/kanncolby@gmail.com" method="POST">
-    <input type="text" name= "name" placeholder="Full Name" required>
-    <input type="email" name="email" placeholder="Email Address" required>
-    <button type="submit">Send</button>
-</form>
-"""
+#contact_form= """
+#<form action="https:formsubmit.co/kanncolby@gmail.com" method="POST">
+    #<input type="text" name= "name" placeholder="Full Name" required>
+    #<input type="email" name="email" placeholder="Email Address" required>
+    #<button type="submit">Send</button>
+#</form>
+#"""
 
-st.markdown(contact_form, unsafe_allow_html=True)
+#st.markdown(contact_form, unsafe_allow_html=True)
 
-st.text('**Due to this app being an example it does not submit info entered above \n' 
+#st.text('**Due to this app being an example it does not submit info entered above \n' 
         'to the City of Boston PD Relations Team email address. The existing app uses \n'
         'an email address the app builder had to act as a placeholder to show this section \n' 
         'would work if the email were altered to a different one within the underlying code.**\n')
