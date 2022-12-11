@@ -54,6 +54,7 @@ hour = alt.Chart(filtered_df, title= 'Incident Count by Hour').mark_line(color =
     alt.Y('count()', title='Number of Incidents')
 )
 st.altair_chart(hour, use_container_width=True)
+st.text('Note: Hour 0 is the equivalent to midnight')
 
 st.subheader('What day of the week are incidents most reported in your district?')
 day = alt.Chart(filtered_df,title='Incident Count by Day').mark_bar(color='#CC6600').encode(
