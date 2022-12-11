@@ -169,6 +169,6 @@ st.markdown(link2, unsafe_allow_html=True)
 #st.markdown(contact_form, unsafe_allow_html=True)
 
 #st.text('**Due to this app being an example it does not submit info entered above \n' 
-        'to the City of Boston PD Relations Team email address. The existing app uses \n'
-        'an email address the app builder had to act as a placeholder to show this section \n' 
-        'would work if the email were altered to a different one within the underlying code.**\n')
+        #'to the City of Boston PD Relations Team email address. The existing app uses \n'
+        #'an email address the app builder had to act as a placeholder to show this section \n' 
+        #'would work if the email were altered to a different one within the underlying code.**\n')
