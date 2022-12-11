@@ -119,7 +119,7 @@ with tab2:
 
     st.subheader('Shooting Count Based on Offenses Reported within 2021')
     
-    with st.spinner('Loading...'):
+    with st.spinner('Mapping your selection...'):
         time.sleep(6)
     st.success('Updated')
 
@@ -140,6 +140,10 @@ with tab3:
     map_crime = filtered_df.drop(filtered_df[filtered_df['lon'] == 0].index)
 
     st.map(map_crime)
+    
+    with st.spinner('Mapping...'):
+        time.sleep(6)
+    st.success('Updated')
 
     st.subheader("IMPORTANT NOTE: \n"
                 "There are some instances where the report filed location coordinates may have been recorded inaccurately \n"
