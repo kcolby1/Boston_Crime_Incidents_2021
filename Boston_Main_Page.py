@@ -135,9 +135,10 @@ with tab2:
 
 
 with tab3:
-    st.header("Incident Report Mapping Boston, MA 2021")
+    st.header("All Districts Incident Report Mapping Boston, MA 2021")
+    st.subheader("Please note the filter bar is not applicable to this map")
     
-    map_crime = crime_df_2.drop(crime_df_2[crime_df_2['lon'] == 0].index)
+    map_crime = filtered_df.drop(filtered_df[filtered_df['lon'] == 0].index)
 
     st.map(map_crime)
 
