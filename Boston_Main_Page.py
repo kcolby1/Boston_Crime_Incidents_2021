@@ -135,8 +135,7 @@ with tab2:
 
 
 with tab3:
-    st.header("All Districts Incident Report Mapping Boston, MA 2021")
-    st.subheader("Please note the filter bar is not applicable to this map")
+    st.header("Districts Incident Report Mapping Boston, MA 2021")
     
     map_crime = filtered_df.drop(filtered_df[filtered_df['lon'] == 0].index)
 
@@ -147,7 +146,7 @@ with tab3:
                 "or another situation caused reports to be received via the Boston Police Department from off the coast of Africa at longitude 0 degrees. \n"
                 "The City of Boston is a coastal location and some reports may reflect incident reports requiring water rescue and response in combination \n"
                 "with the United States Coast Guard based in Boston, MA. \n"
-                )
+                "It is also important to note that not all incident calls logged for a given district took place within that district based upon the recorded address.")
 
 st.subheader(
         "To find out more about the City of Boston and its Police Department a direct link to the source can be found below.\n"
